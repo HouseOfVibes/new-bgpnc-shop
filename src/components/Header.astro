@@ -1,0 +1,348 @@
+<!-- SVG Icon Definitions -->
+<svg style="display: none;">
+  <defs>
+    <!-- Search Icon -->
+    <symbol id="icon-search" viewBox="0 0 24 24">
+      <path d="M21 21L16.514 16.506M19 10.5C19 15.194 15.194 19 10.5 19S2 15.194 2 10.5 5.806 2 10.5 2 19 5.806 19 10.5Z" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round"/>
+    </symbol>
+    
+    <!-- Cart Icon -->
+    <symbol id="icon-cart" viewBox="0 0 24 24">
+      <path d="M3 3H5L5.4 5M7 13H17L21 5H5.4M7 13L5.4 5M7 13L4.7 15.3C4.3 15.7 4.6 16.5 5.1 16.5H17M17 13V17C17 18.1 16.1 19 15 19H9C7.9 19 7 18.1 7 17V13M17 13H7" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+    </symbol>
+    
+    <!-- User Icon -->
+    <symbol id="icon-user" viewBox="0 0 24 24">
+      <path d="M20 21V19C20 17.9 19.1 17 18 17H6C4.9 17 4 17.9 4 19V21M16 7C16 9.2 14.2 11 12 11S8 9.2 8 7 9.8 3 12 3 16 4.8 16 7Z" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+    </symbol>
+  </defs>
+</svg>
+
+<!-- BGP SHOP HEADER HTML -->
+<header class="bgp-site-header">
+  <div class="bgp-header-container">
+    <!-- Logo Section -->
+    <div class="bgp-header-logo">
+      <a href="/" class="bgp-logo-link">
+        <img src="https://shop.bgpnc.com/wp-content/uploads/2025/07/Mobile-screens2.png"
+             alt="BGP Shop" class="bgp-logo-image">
+      </a>
+    </div>
+
+    <!-- Desktop Navigation -->
+    <nav class="bgp-desktop-nav">
+      <ul class="bgp-nav-menu">
+        <li class="bgp-nav-item"><a href="/" class="bgp-nav-link">Home</a></li>
+        <li class="bgp-nav-item"><a href="https://shop.bgpnc.com/bgp-shop/" class="bgp-nav-link">Shop</a></li>
+        <li class="bgp-nav-item"><a href="/blog" class="bgp-nav-link">Blog</a></li>
+        <li class="bgp-nav-item"><a href="/gallery" class="bgp-nav-link">Gallery</a></li>
+        <li class="bgp-nav-item"><a href="/about" class="bgp-nav-link">About</a></li>
+        <li class="bgp-nav-item"><a href="/contact" class="bgp-nav-link">Contact</a></li>
+      </ul>
+    </nav>
+
+    <!-- Header Actions -->
+    <div class="bgp-header-actions">
+      <a href="/?s=" class="bgp-action-link" title="Search" aria-label="Search">
+        <svg class="bgp-icon" width="20" height="20">
+          <use href="#icon-search"></use>
+        </svg>
+      </a>
+      <a href="/cart" class="bgp-action-link bgp-cart-link" title="Shopping Cart" aria-label="Shopping Cart">
+        <svg class="bgp-icon" width="20" height="20">
+          <use href="#icon-cart"></use>
+        </svg>
+        <span class="bgp-cart-count">0</span>
+      </a>
+      <a href="/my-account" class="bgp-action-link" title="My Account" aria-label="My Account">
+        <svg class="bgp-icon" width="20" height="20">
+          <use href="#icon-user"></use>
+        </svg>
+      </a>
+      <!-- Mobile Menu Toggle -->
+      <button class="bgp-mobile-menu-toggle" aria-label="Toggle Menu" aria-expanded="false">
+        <span class="bgp-hamburger-line"></span>
+        <span class="bgp-hamburger-line"></span>
+        <span class="bgp-hamburger-line"></span>
+      </button>
+    </div>
+
+    <!-- Mobile Navigation -->
+    <nav class="bgp-mobile-nav">
+      <ul class="bgp-mobile-menu">
+        <li class="bgp-mobile-nav-item"><a href="/" class="bgp-mobile-nav-link">Home</a></li>
+        <li class="bgp-mobile-nav-item"><a href="https://shop.bgpnc.com/bgp-shop/" class="bgp-mobile-nav-link">Shop</a></li>
+        <li class="bgp-mobile-nav-item"><a href="/blog" class="bgp-mobile-nav-link">Blog</a></li>
+        <li class="bgp-mobile-nav-item"><a href="/gallery" class="bgp-mobile-nav-link">Gallery</a></li>
+        <li class="bgp-mobile-nav-item"><a href="/about" class="bgp-mobile-nav-link">About</a></li>
+        <li class="bgp-mobile-nav-item"><a href="/contact" class="bgp-mobile-nav-link">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<style>
+:root {
+  --bgp-primary-teal: #4A9B8E;
+  --bgp-golden-yellow: #E6B800;
+  --bgp-light-yellow: #F0C420;
+  --bgp-soft-cream: #F8F6F0;
+  --bgp-deep-charcoal: #2C3E50;
+  --bgp-soft-coral: #FF6B6B;
+  --bgp-font-heading: 'Inter', 'Helvetica Neue', Arial, sans-serif;
+  --bgp-font-body: 'Source Sans Pro', 'Segoe UI', Tahoma, sans-serif;
+}
+
+/* Header Base Styles */
+.bgp-site-header {
+  background-color: var(--bgp-deep-charcoal);
+  border-bottom: 3px solid var(--bgp-golden-yellow);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  width: 100%;
+  box-shadow: 0 4px 20px rgba(230, 184, 0, 0.15);
+}
+
+.bgp-header-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100px;
+  position: relative;
+}
+
+/* Logo Styles */
+.bgp-logo-image {
+  height: 70px; /* Increased size */
+  width: auto;
+  /* Adding glow effect */
+  filter: drop-shadow(0 0 15px var(--bgp-primary-teal)); /* Increased glow intensity */
+}
+
+/* Desktop Navigation */
+.bgp-desktop-nav {
+  flex-grow: 1;
+  justify-content: center;
+  display: flex;
+  margin: 0 40px;
+}
+.bgp-nav-menu {
+  display: flex;
+  list-style: none;
+  gap: 40px;
+}
+.bgp-nav-link {
+  font-family: var(--bgp-font-heading);
+  font-weight: 500;
+  font-size: 18px;
+  color: var(--bgp-soft-cream);
+  text-decoration: none;
+  transition: color 0.3s ease;
+  position: relative; /* Needed for ::after pseudo-element */
+  padding-bottom: 5px; /* Space for the underline */
+}
+.bgp-nav-link:hover {
+  color: var(--bgp-golden-yellow);
+}
+
+/* Yellow Underline Hover Effect */
+.bgp-nav-link::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 3px;
+  background: linear-gradient(90deg, var(--bgp-golden-yellow), var(--bgp-primary-teal));
+  transition: width 0.3s ease;
+  border-radius: 2px;
+  box-shadow: 0 2px 8px rgba(230, 184, 0, 0.4);
+}
+
+.bgp-nav-link:hover::after {
+  width: 100%;
+}
+
+
+/* Header Actions */
+.bgp-header-actions {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.bgp-action-link {
+  position: relative;
+  color: var(--bgp-deep-charcoal);
+  text-decoration: none;
+  width: 48px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, var(--bgp-golden-yellow), var(--bgp-light-yellow));
+  border: 2px solid var(--bgp-golden-yellow);
+  border-radius: 50%;
+  transition: all 0.3s ease;
+}
+.bgp-action-link:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 20px rgba(230, 184, 0, 0.4);
+}
+
+.bgp-icon {
+  width: 20px;
+  height: 20px;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 2;
+}
+
+/* Cart Count Badge */
+.bgp-cart-count {
+  position: absolute;
+  top: -2px;
+  right: -2px;
+  background: linear-gradient(135deg, var(--bgp-soft-coral), #FF8A80);
+  color: #fff;
+  font-size: 12px;
+  font-weight: 700;
+  padding: 4px 8px;
+  border-radius: 12px;
+  border: 2px solid var(--bgp-golden-yellow);
+}
+
+/* Mobile Menu Toggle */
+.bgp-mobile-menu-toggle {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  background: linear-gradient(135deg, var(--bgp-golden-yellow), var(--bgp-light-yellow));
+  border: 2px solid var(--bgp-golden-yellow);
+  border-radius: 8px;
+  cursor: pointer;
+}
+.bgp-hamburger-line {
+  width: 24px;
+  height: 3px;
+  background-color: var(--bgp-deep-charcoal);
+  margin: 3px 0;
+  border-radius: 2px;
+  transition: all 0.3s ease;
+}
+
+/* Hamburger Animation */
+.bgp-mobile-menu-toggle.active .bgp-hamburger-line:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+.bgp-mobile-menu-toggle.active .bgp-hamburger-line:nth-child(2) {
+  opacity: 0;
+}
+.bgp-mobile-menu-toggle.active .bgp-hamburger-line:nth-child(3) {
+  transform: rotate(-45deg) translate(5px, -5px);
+}
+
+/* Mobile Navigation */
+.bgp-mobile-nav {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  background-color: var(--bgp-deep-charcoal);
+  border-bottom: 1px solid var(--bgp-golden-yellow);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+.bgp-mobile-menu {
+  list-style: none;
+  padding: 20px 0;
+}
+.bgp-mobile-nav-link {
+  display: block;
+  padding: 15px 20px;
+  color: var(--bgp-soft-cream);
+  font-family: var(--bgp-font-heading);
+  font-size: 18px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+.bgp-mobile-nav-link:hover {
+  color: var(--bgp-golden-yellow);
+  background-color: rgba(230, 184, 0, 0.1);
+}
+
+/* Responsive */
+ @media (max-width: 768px) {
+  .bgp-desktop-nav { 
+    display: none; 
+  }
+  .bgp-mobile-menu-toggle { 
+    display: flex; 
+  }
+  .bgp-header-container { 
+    height: auto; 
+    padding: 15px 20px; 
+  }
+  .bgp-logo-image {
+    height: 45px;
+  }
+  .bgp-header-actions {
+    gap: 15px;
+  }
+  .bgp-action-link {
+    width: 44px;
+    height: 44px;
+  }
+}
+
+ @media (max-width: 480px) {
+  .bgp-header-container {
+    padding: 10px 15px;
+  }
+  .bgp-header-actions {
+    gap: 10px;
+  }
+  .bgp-action-link {
+    width: 40px;
+    height: 40px;
+  }
+  .bgp-logo-image {
+    height: 40px;
+  }
+}
+
+.bgp-mobile-nav.active { 
+  display: block; 
+}
+</style>
+
+<script>
+// BGP Header JavaScript
+document.addEventListener('DOMContentLoaded', function() {
+  // Mobile Menu Toggle
+  const mobileToggle = document.querySelector('.bgp-mobile-menu-toggle');
+  const mobileNav = document.querySelector('.bgp-mobile-nav');
+  
+  if (mobileToggle && mobileNav) {
+    mobileToggle.addEventListener('click', function() {
+      const isOpen = mobileNav.classList.toggle('active');
+      mobileToggle.classList.toggle('active');
+      mobileToggle.setAttribute('aria-expanded', isOpen);
+    });
+  }
+
+  // Close mobile menu when clicking outside
+  document.addEventListener('click', function(e) {
+    if (!e.target.closest('.bgp-site-header') && mobileNav && mobileNav.classList.contains('active')) {
+      mobileNav.classList.remove('active');
+      mobileToggle.classList.remove('active');
+      mobileToggle.setAttribute('aria-expanded', 'false');
+    }
+  });
+});
+</script>

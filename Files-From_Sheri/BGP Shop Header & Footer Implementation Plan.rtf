@@ -1,0 +1,1410 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2822
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Arial-BoldMT;\f1\fswiss\fcharset0 ArialMT;\f2\fswiss\fcharset0 Helvetica;
+\f3\fmodern\fcharset0 Courier;}
+{\colortbl;\red255\green255\blue255;\red0\green0\blue0;\red24\green112\blue43;\red97\green100\blue98;
+\red219\green63\blue57;\red143\green144\blue150;\red66\green147\blue62;\red167\green87\blue5;\red16\green60\blue192;
+}
+{\*\expandedcolortbl;;\cspthree\c0\c0\c0;\cspthree\c23705\c49455\c25227;\cspthree\c45702\c46631\c45931;
+\cspthree\c82923\c37461\c31457;\cspthree\c62820\c63127\c65278;\cspthree\c39480\c62399\c34641;\cspthree\c67668\c43389\c14733;\cspthree\c15490\c32819\c77140;
+}
+\margl1440\margr1440\vieww11520\viewh8400\viewkind0
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f0\b\fs46 \cf2 BGP Shop Header & Footer\
+Implementation Plan - UPDATED\
+
+\fs34 Design Overview\
+
+\fs22 Updated Design Strategy:\
+
+\f1\b0 \uc0\u9679 \
+\uc0\u9679 \
+\uc0\u9679 \
+\uc0\u9679 \
+
+\f0\b Dark Header & Footer
+\f1\b0 : Deep charcoal (
+\f2 \cf3 #2C3E50
+\f1 \cf2 ) with rich golden yellow (
+\f2 \cf3 #E6B800
+\f1 \cf2 )\
+accents\
+
+\f0\b White Background
+\f1\b0 : Clean white (
+\f2 \cf3 #FFFFFF
+\f1 \cf2 ) for main content areas, perfect for shop\
+pages\
+
+\f0\b Visual Separation
+\f1\b0 : Strong contrast between dark navigation areas and clean content\
+space\
+
+\f0\b Professional E-commerce Look
+\f1\b0 : Optimized for product displays and shopping\
+experience\
+
+\f0\b\fs34 Color Palette Implementation\
+
+\fs26 Primary Colors\
+
+\f1\b0\fs22 \uc0\u9679 \
+\uc0\u9679 \
+\uc0\u9679 \
+\uc0\u9679 \
+\uc0\u9679 \
+\uc0\u9679 \
+\uc0\u9679 \
+
+\f0\b Deep Charcoal
+\f1\b0 : 
+\f2 \cf3 #2C3E50
+\f1 \cf2  (Header/Footer background)\
+
+\f0\b Golden Yellow
+\f1\b0 : 
+\f2 \cf3 #E6B800
+\f1 \cf2  (Primary accent color - borders, highlights, buttons)\
+
+\f0\b Light Yellow
+\f1\b0 : 
+\f2 \cf3 #F0C420
+\f1 \cf2  (Secondary yellow for gradients)\
+
+\f0\b Primary Teal
+\f1\b0 : 
+\f2 \cf3 #4A9B8E
+\f1 \cf2  (Logo, secondary accents)\
+
+\f0\b Pure White
+\f1\b0 : 
+\f2 \cf3 #FFFFFF
+\f1 \cf2  (Main content background)\
+
+\f0\b Soft Cream
+\f1\b0 : 
+\f2 \cf3 #F8F6F0
+\f1 \cf2  (Text on dark backgrounds)\
+
+\f0\b Soft Coral
+\f1\b0 : 
+\f2 \cf3 #FF6B6B
+\f1 \cf2  (Alert/notification accents)\
+
+\f0\b\fs34 Header Structure Overview\
+
+\fs26 Desktop Layout\
+
+\f2\b0\fs18 \cf4 None\
+
+\fs22 \cf3 \uc0\u9484 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \
+\uc0\u9472 \u9472 \u9472 \u9488 \u9474 \cf2  \cf3 [BGP\cf2  \cf3 LOGO]\cf2  \cf3 Home\cf2  \cf3 Shop\cf2  \cf3 Blog\cf2  \cf3 Gallery\cf2  \cf3 About\cf2  \cf3 Contact\
+\uc0\u9474 \
+\uc0\u9474 \
+\uc0\u9474 \
+\uc0\u9474 \
+\uc0\u9472 \u9472 \u9472 \u9496 \
+\uc0\u9474 \cf2  \cf3 (Teal\cf2  \cf3 Glow)\cf2  \cf3 (Cream\cf2  \cf3 text,\cf2  \cf3 Yellow\cf2  \cf3 hover,\cf2  \cf3 Yellow\cf2  \cf3 underlines)\
+\uc0\u9474 \cf2  \cf3 [
+\f3 \uc0\u55357 \u56589 
+\f2 ]\cf2  \cf3 [
+\f3 \uc0\u55357 \u57042 
+\f2 3]\cf2  \cf3 [
+\f3 \uc0\u55357 \u56420 
+\f2 ]\
+\uc0\u9474 \cf2  \cf3 (Golden\cf2  \cf3 Yellow\cf2  \cf3 Buttons)\
+\uc0\u9492 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \
+\uc0\u8593 \cf2  \cf3 Dark\cf2  \cf3 Charcoal\cf2  \cf3 Background\cf2  \cf3 with\cf2  \cf3 Golden\cf2  \cf3 Yellow\cf2  \cf3 Bottom\cf2  \cf3 Border\
+###\cf2  \cf3 Mobile\cf2  \cf3 Layout\
+
+\f1 \cf2 \uc0\u9484 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \
+\uc0\u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9488  \u9474  [BGP LOGO] [
+\f3 \uc0\u55357 \u57042 
+\f1 3] [
+\f3 \uc0\u55357 \u56420 
+\f1 ] [
+\f2 \uc0\u9776 
+\f1 ] \uc0\u9474  \u9474  (Teal Glow) (Golden Yellow) (Cream) \u9474 \
+\uc0\u9492 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \
+\uc0\u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9496  \u8593  Dark Charcoal Background with Golden Yellow Bottom Border\
+
+\f0\b\fs34 Header HTML Structure\
+
+\f1\b0\fs22 html\
+
+\f2\fs18 \cf4 HTML\
+
+\fs22 \cf3 <header\cf5  \cf3 class=\
+"site-header">\
+<div\cf5  \cf3 class=\
+"header-container">\
+<!--\cf6  \cf3 Logo\cf6  \cf3 Section\cf6  \cf3 -->\
+<div\cf5  \cf3 class=\
+"header-logo">\
+<a\cf5  \cf3 href=\
+"/"\cf5  \cf3 class=\
+"logo-link">\
+<img\cf5  \cf3 src=\
+"bgp-logo.svg"\cf5  \cf3 alt=\
+Meets\cf7  \cf3 Everyday\cf7  \cf3 Style"\cf5  \cf3 class=\
+"logo-image">\
+</a>\
+</div>\
+"BGP\cf7  \cf3 Shop\cf7  \cf3 -\cf7  \cf3 Where\cf7  \cf3 Positivity\
+<!--\cf6  \cf3 Desktop\cf6  \cf3 Navigation\cf6  \cf3 -->\
+<nav\cf5  \cf3 class=\
+"header-nav\cf7  \cf3 desktop-nav">\
+<ul\cf5  \cf3 class=\
+"nav-menu">class=\
+class=\
+class=\
+<li\cf5  \cf3 class=\
+<a\cf5  \cf3 href=\
+"nav-item">\
+"/"\cf5  \cf3 class=\
+"nav-link">Home</a>\
+</li>\
+<li\cf5  \cf3 class=\
+<a\cf5  \cf3 href=\
+"nav-item\cf7  \cf3 has-dropdown">\
+"/shop"\cf5  \cf3 class=\
+"nav-link">Shop</a>\
+<ul\cf5  \cf3 class=\
+"dropdown-menu">\
+<li><a\cf5  \cf3 href=\
+"/shop?category=apparel"\
+"dropdown-link">Positive\cf2  \cf3 Vibes\cf2  \cf3 Apparel</a></li>\
+<li><a\cf5  \cf3 href=\
+"/shop?category=accessories"\
+"dropdown-link">Everyday\cf2  \cf3 Inspiration</a></li>\
+<li><a\cf5  \cf3 href=\
+"/shop?category=lifestyle"\
+"dropdown-link">Good\cf2  \cf3 Energy\cf2  \cf3 Gear</a></li>\
+<li><a\cf5  \cf3 href=\
+"/shop"\cf5  \cf3 class=\
+"dropdown-link">View\
+All</a></li>\
+</ul>\
+</li>\
+<li\cf5  \cf3 class=\
+<a\cf5  \cf3 href=\
+</li>\
+<li\cf5  \cf3 class=\
+<a\cf5  \cf3 href=\
+</li>\
+<li\cf5  \cf3 class=\
+<a\cf5  \cf3 href=\
+</li>\
+<li\cf5  \cf3 class=\
+<a\cf5  \cf3 href=\
+</li>\
+</ul>\
+</nav>\
+"nav-item">\
+"/blog"\cf5  \cf3 class=\
+"nav-link">Blog</a>\
+"nav-item">\
+"/gallery"\cf5  \cf3 class=\
+"nav-link">Gallery</a>\
+"nav-item">\
+"/about"\cf5  \cf3 class=\
+"nav-link">About</a>\
+"nav-item">\
+"/contact"\cf5  \cf3 class=\
+"nav-link">Contact</a>\
+<!--\cf6  \cf3 Header\cf6  \cf3 Actions\cf6  \cf3 -->\
+<div\cf5  \cf3 class=\
+"header-actions">\
+<a\cf5  \cf3 href=\
+"/search"\cf5  \cf3 class=\
+aria-label=\
+"Search">\
+<svg\cf5  \cf3 class=\
+"icon\cf7  \cf3 icon-search"\cf5  \cf3 width=\
+"action-link\cf7  \cf3 search-trigger"\
+"20"\cf5  \cf3 height=\
+"20"><use\cf5  \cf3 href=\
+</svg>\
+"#icon-search"></use>\
+</a>\
+aria-label=\
+<a\cf5  \cf3 href=\
+"/cart"\cf5  \cf3 class=\
+"action-link\cf7  \cf3 cart-link"\
+"Shopping\cf7  \cf3 Cart">\
+<svg\cf5  \cf3 class=\
+"icon\cf7  \cf3 icon-cart"\cf5  \cf3 width=\
+"20"\cf5  \cf3 height=\
+<use\cf5  \cf3 href=\
+"#icon-cart"></use>\
+"20">\
+</svg>\
+<span\cf5  \cf3 class=\
+</a>\
+"cart-count">0</span>\
+aria-label=\
+<a\cf5  \cf3 href=\
+"/account"\cf5  \cf3 class=\
+"My\cf7  \cf3 Account">\
+<svg\cf5  \cf3 class=\
+"icon\cf7  \cf3 icon-user"\cf5  \cf3 width=\
+<use\cf5  \cf3 href=\
+"#icon-user"></use>\
+"action-link\cf7  \cf3 account-link"\
+"20"\cf5  \cf3 height=\
+"20">\
+</svg>\
+</a>\
+<!--\cf6  \cf3 Mobile\cf6  \cf3 Menu\cf6  \cf3 Toggle\cf6  \cf3 -->\
+<button\cf5  \cf3 class=\
+"mobile-menu-toggle"\cf5  \cf3 aria-label=\
+aria-expanded=\
+"false">\
+<span\cf5  \cf3 class=\
+<span\cf5  \cf3 class=\
+<span\cf5  \cf3 class=\
+"hamburger-line"></span>\
+"hamburger-line"></span>\
+"hamburger-line"></span>\
+</button>\
+</div>\
+"Toggle\cf7  \cf3 Menu"\
+<!--\cf6  \cf3 Mobile\cf6  \cf3 Navigation\cf6  \cf3 -->\
+<nav\cf5  \cf3 class=\
+"header-nav\cf7  \cf3 mobile-nav">\
+<ul\cf5  \cf3 class=\
+"mobile-menu">\
+<li\cf5  \cf3 class=\
+"mobile-nav-item">\
+<a\cf5  \cf3 href=\
+"/"\cf5  \cf3 class=\
+"mobile-nav-link">Home</a>\
+</li>\
+<li\cf5  \cf3 class=\
+"mobile-nav-item\cf7  \cf3 has-submenu">\
+<a\cf5  \cf3 href=\
+"/shop"\cf5  \cf3 class=\
+"mobile-nav-link">Shop</a>aria-expanded=\
+<button\cf5  \cf3 class=\
+"submenu-toggle"\
+"false">+</button>\
+<ul\cf5  \cf3 class=\
+"mobile-submenu">\
+class=\
+class=\
+class=\
+<li><a\cf5  \cf3 href=\
+"/shop?category=apparel"\
+"mobile-nav-link">Positive\cf2  \cf3 Vibes\cf2  \cf3 Apparel</a></li>\
+<li><a\cf5  \cf3 href=\
+"/shop?category=accessories"\
+"mobile-nav-link">Everyday\cf2  \cf3 Inspiration</a></li>\
+<li><a\cf5  \cf3 href=\
+"/shop?category=lifestyle"\
+"mobile-nav-link">Good\cf2  \cf3 Energy\cf2  \cf3 Gear</a></li>\
+<li><a\cf5  \cf3 href=\
+"/shop"\cf5  \cf3 class=\
+"mobile-nav-link">View\
+All</a></li>\
+</ul>\
+</li>\
+<li\cf5  \cf3 class=\
+<a\cf5  \cf3 href=\
+</li>\
+<li\cf5  \cf3 class=\
+<a\cf5  \cf3 href=\
+</li>\
+<li\cf5  \cf3 class=\
+<a\cf5  \cf3 href=\
+</li>\
+<li\cf5  \cf3 class=\
+<a\cf5  \cf3 href=\
+</li>\
+</ul>\
+</nav>\
+</div>\
+</header>\
+"mobile-nav-item">\
+"/blog"\cf5  \cf3 class=\
+"mobile-nav-link">Blog</a>\
+"mobile-nav-item">\
+"/gallery"\cf5  \cf3 class=\
+"mobile-nav-link">Gallery</a>\
+"mobile-nav-item">\
+"/about"\cf5  \cf3 class=\
+"mobile-nav-link">About</a>\
+"mobile-nav-item">\
+"/contact"\cf5  \cf3 class=\
+"mobile-nav-link">Contact</a>\
+
+\f0\b\fs34 \cf2 Header CSS Styling\
+
+\f1\b0\fs22 css\
+
+\f2\fs18 \cf4 CSS\
+
+\fs22 \cf3 /*\cf6  \cf3 Header\cf6  \cf3 Variables\cf6  \cf3 */:root\cf2  \cf3 \{\
+--header-height:\cf2  \cf3 80px;\
+--header-bg:\cf2  \cf3 var(--soft-cream);\
+--header-border:\cf2  \cf3 var(--light-teal);\
+--nav-text:\cf2  \cf3 var(--deep-charcoal);\
+--nav-hover:\cf2  \cf3 var(--primary-teal);\
+--mobile-breakpoint:\cf2  \cf3 768px;\
+\}\
+/*\cf6  \cf3 Header\cf6  \cf3 Base\cf6  \cf3 Styles\cf6  \cf3 */\
+.site-header\cf2  \cf3 \{\
+background-color:\cf2  \cf3 var(--deep-charcoal);\
+border-bottom:\cf2  \cf3 3px\cf2  \cf3 solid\cf2  \cf3 var(--golden-yellow);\
+position:\cf2  \cf3 relative;\
+z-index:\cf2  \cf3 100;\
+width:\cf2  \cf3 100%;\
+box-shadow:\cf2  \cf3 0\cf2  \cf3 4px\cf2  \cf3 20px\cf2  \cf3 rgba(230,\cf2  \cf3 184,\cf2  \cf3 0,\cf2  \cf3 0.15);\
+\}\
+.header-container\cf2  \cf3 \{\
+max-width:\cf2  \cf3 1200px;\
+margin:\cf2  \cf3 0\cf2  \cf3 auto;\
+padding:\cf2  \cf3 0\cf2  \cf3 20px;\
+display:\cf2  \cf3 flex;\
+align-items:\cf2  \cf3 center;\
+justify-content:\cf2  \cf3 space-between;\
+height:\cf2  \cf3 var(--header-height);\
+\}\
+/*\cf6  \cf3 Logo\cf6  \cf3 Styles\cf6  \cf3 */\
+.header-logo\cf2  \cf3 \{\
+flex-shrink:\cf2  \cf3 0;\
+\}\
+.logo-link\cf2  \cf3 \{\
+display:\cf2  \cf3 inline-block;line-height:\cf2  \cf3 1;\
+font-family:\cf2  \cf3 var(--font-heading);\
+font-weight:\cf2  \cf3 900;\
+font-size:\cf2  \cf3 32px;\
+color:\cf2  \cf3 var(--primary-teal);\
+text-decoration:\cf2  \cf3 none;\
+letter-spacing:\cf2  \cf3 -1px;\
+text-shadow:\cf2  \cf3 0\cf2  \cf3 0\cf2  \cf3 10px\cf2  \cf3 rgba(74,\cf2  \cf3 155,\cf2  \cf3 142,\cf2  \cf3 0.3);\
+\}\
+.logo-link:hover\cf2  \cf3 \{\
+color:\cf2  \cf3 var(--light-teal);\
+text-shadow:\cf2  \cf3 0\cf2  \cf3 0\cf2  \cf3 15px\cf2  \cf3 rgba(74,\cf2  \cf3 155,\cf2  \cf3 142,\cf2  \cf3 0.5);\
+transform:\cf2  \cf3 scale(1.05);\
+\}\
+/*\cf6  \cf3 Desktop\cf6  \cf3 Navigation\cf6  \cf3 */\
+.desktop-nav\cf2  \cf3 \{\
+display:\cf2  \cf3 flex;\
+flex-grow:\cf2  \cf3 1;\
+justify-content:\cf2  \cf3 center;\
+margin:\cf2  \cf3 0\cf2  \cf3 40px;\
+\}\
+.nav-menu\cf2  \cf3 \{\
+display:\cf2  \cf3 flex;\
+list-style:\cf2  \cf3 none;\
+margin:\cf2  \cf3 0;\
+padding:\cf2  \cf3 0;\
+gap:\cf2  \cf3 40px;\
+align-items:\cf2  \cf3 center;\
+\}\
+.nav-item\cf2  \cf3 \{\
+position:\cf2  \cf3 relative;\
+\}.nav-link\cf2  \cf3 \{\
+font-family:\cf2  \cf3 var(--font-heading);\
+font-weight:\cf2  \cf3 500;\
+font-size:\cf2  \cf3 16px;\
+color:\cf2  \cf3 var(--soft-cream);\
+text-decoration:\cf2  \cf3 none;\
+padding:\cf2  \cf3 10px\cf2  \cf3 0;\
+transition:\cf2  \cf3 all\cf2  \cf3 0.3s\cf2  \cf3 ease;\
+position:\cf2  \cf3 relative;\
+\}\
+.nav-link:hover,\
+.nav-item.active\cf7  \cf3 .nav-link\cf2  \cf3 \{\
+color:\cf2  \cf3 var(--golden-yellow);\
+text-shadow:\cf2  \cf3 0\cf2  \cf3 0\cf2  \cf3 12px\cf2  \cf3 rgba(230,\cf2  \cf3 184,\cf2  \cf3 0,\cf2  \cf3 0.6);\
+\}\
+.nav-link::after\cf2  \cf3 \{\
+content:\cf2  \cf3 '';\
+position:\cf2  \cf3 absolute;\
+bottom:\cf2  \cf3 0;\
+left:\cf2  \cf3 0;\
+width:\cf2  \cf3 0;\
+height:\cf2  \cf3 3px;\
+background:\cf2  \cf3 linear-gradient(90deg,\cf2  \cf3 var(--golden-yellow),\
+var(--primary-teal));\
+transition:\cf2  \cf3 width\cf2  \cf3 0.3s\cf2  \cf3 ease;\
+border-radius:\cf2  \cf3 2px;\
+box-shadow:\cf2  \cf3 0\cf2  \cf3 2px\cf2  \cf3 8px\cf2  \cf3 rgba(230,\cf2  \cf3 184,\cf2  \cf3 0,\cf2  \cf3 0.4);\
+\}\
+.nav-link:hover::after,\
+.nav-item.active\cf7  \cf3 .nav-link::after\cf2  \cf3 \{\
+width:\cf2  \cf3 100%;\
+\}/*\cf6  \cf3 Dropdown\cf6  \cf3 Menu\cf6  \cf3 */\
+.has-dropdown\cf2  \cf3 \{\
+position:\cf2  \cf3 relative;\
+\}\
+.dropdown-menu\cf2  \cf3 \{\
+position:\cf2  \cf3 absolute;\
+top:\cf2  \cf3 100%;\
+left:\cf2  \cf3 0;\
+background:\cf2  \cf3 linear-gradient(135deg,\cf2  \cf3 var(--golden-yellow),\
+var(--primary-teal));\
+border:\cf2  \cf3 2px\cf2  \cf3 solid\cf2  \cf3 var(--golden-yellow);\
+border-radius:\cf2  \cf3 8px;\
+box-shadow:\cf2  \cf3 0\cf2  \cf3 8px\cf2  \cf3 25px\cf2  \cf3 rgba(230,\cf2  \cf3 184,\cf2  \cf3 0,\cf2  \cf3 0.3);\
+list-style:\cf2  \cf3 none;\
+margin:\cf2  \cf3 0;\
+padding:\cf2  \cf3 10px\cf2  \cf3 0;\
+min-width:\cf2  \cf3 220px;\
+opacity:\cf2  \cf3 0;\
+visibility:\cf2  \cf3 hidden;\
+transform:\cf2  \cf3 translateY(-10px);\
+transition:\cf2  \cf3 all\cf2  \cf3 0.3s\cf2  \cf3 ease;\
+z-index:\cf2  \cf3 1000;\
+\}\
+.has-dropdown:hover\cf7  \cf3 .dropdown-menu\cf2  \cf3 \{\
+opacity:\cf2  \cf3 1;\
+visibility:\cf2  \cf3 visible;\
+transform:\cf2  \cf3 translateY(0);\
+\}\
+.dropdown-link\cf2  \cf3 \{\
+display:\cf2  \cf3 block;\
+padding:\cf2  \cf3 10px\cf2  \cf3 20px;\
+color:\cf2  \cf3 var(--deep-charcoal);text-decoration:\cf2  \cf3 none;\
+font-family:\cf2  \cf3 var(--font-body);\
+font-size:\cf2  \cf3 14px;\
+font-weight:\cf2  \cf3 600;\
+transition:\cf2  \cf3 background-color\cf2  \cf3 0.3s\cf2  \cf3 ease;\
+\}\
+.dropdown-link:hover\cf2  \cf3 \{\
+background-color:\cf2  \cf3 rgba(255,\cf2  \cf3 255,\cf2  \cf3 255,\cf2  \cf3 0.2);\
+color:\cf2  \cf3 var(--deep-charcoal);\
+\}\
+/*\cf6  \cf3 Header\cf6  \cf3 Actions\cf6  \cf3 */\
+.header-actions\cf2  \cf3 \{\
+display:\cf2  \cf3 flex;\
+align-items:\cf2  \cf3 center;\
+gap:\cf2  \cf3 20px;\
+\}\
+.action-link\cf2  \cf3 \{\
+position:\cf2  \cf3 relative;\
+color:\cf2  \cf3 var(--deep-charcoal);\
+text-decoration:\cf2  \cf3 none;\
+padding:\cf2  \cf3 10px;\
+border-radius:\cf2  \cf3 50%;\
+transition:\cf2  \cf3 all\cf2  \cf3 0.3s\cf2  \cf3 ease;\
+background:\cf2  \cf3 linear-gradient(135deg,\cf2  \cf3 var(--golden-yellow),\
+var(--light-yellow));\
+border:\cf2  \cf3 2px\cf2  \cf3 solid\cf2  \cf3 var(--golden-yellow);\
+font-weight:\cf2  \cf3 bold;\
+\}\
+.action-link:hover\cf2  \cf3 \{\
+color:\cf2  \cf3 var(--deep-charcoal);\
+background:\cf2  \cf3 linear-gradient(135deg,\cf2  \cf3 var(--light-yellow),\
+var(--golden-yellow));transform:\cf2  \cf3 translateY(-3px);\
+box-shadow:\cf2  \cf3 0\cf2  \cf3 6px\cf2  \cf3 20px\cf2  \cf3 rgba(230,\cf2  \cf3 184,\cf2  \cf3 0,\cf2  \cf3 0.4);\
+\}\
+.icon\cf2  \cf3 \{\
+width:\cf2  \cf3 20px;\
+height:\cf2  \cf3 20px;\
+fill:\cf2  \cf3 currentColor;\
+\}\
+/*\cf6  \cf3 Cart\cf6  \cf3 Count\cf6  \cf3 Badge\cf6  \cf3 */\
+.cart-count\cf2  \cf3 \{\
+position:\cf2  \cf3 absolute;\
+top:\cf2  \cf3 -2px;\
+right:\cf2  \cf3 -2px;\
+background:\cf2  \cf3 linear-gradient(135deg,\cf2  \cf3 var(--soft-coral),\
+#FF8A80);\
+color:\cf2  \cf3 white;\
+font-size:\cf2  \cf3 12px;\
+font-weight:\cf2  \cf3 700;\
+padding:\cf2  \cf3 3px\cf2  \cf3 7px;\
+border-radius:\cf2  \cf3 12px;\
+min-width:\cf2  \cf3 20px;\
+text-align:\cf2  \cf3 center;\
+border:\cf2  \cf3 2px\cf2  \cf3 solid\cf2  \cf3 var(--golden-yellow);\
+box-shadow:\cf2  \cf3 0\cf2  \cf3 2px\cf2  \cf3 8px\cf2  \cf3 rgba(255,\cf2  \cf3 107,\cf2  \cf3 107,\cf2  \cf3 0.3);\
+\}\
+/*\cf6  \cf3 Mobile\cf6  \cf3 Menu\cf6  \cf3 Toggle\cf6  \cf3 */\
+.mobile-menu-toggle\cf2  \cf3 \{\
+display:\cf2  \cf3 none;\
+flex-direction:\cf2  \cf3 column;\
+justify-content:\cf2  \cf3 center;\
+width:\cf2  \cf3 30px;\
+height:\cf2  \cf3 30px;\
+background:\cf2  \cf3 none;border:\cf2  \cf3 none;\
+cursor:\cf2  \cf3 pointer;\
+padding:\cf2  \cf3 0;\
+\}\
+.hamburger-line\cf2  \cf3 \{\
+width:\cf2  \cf3 25px;\
+height:\cf2  \cf3 3px;\
+background-color:\cf2  \cf3 var(--soft-cream);\
+margin:\cf2  \cf3 3px\cf2  \cf3 0;\
+transition:\cf2  \cf3 all\cf2  \cf3 0.3s\cf2  \cf3 ease;\
+border-radius:\cf2  \cf3 2px;\
+\}\
+.mobile-menu-toggle:hover\cf7  \cf3 .hamburger-line\cf2  \cf3 \{\
+background-color:\cf2  \cf3 var(--golden-yellow);\
+box-shadow:\cf2  \cf3 0\cf2  \cf3 0\cf2  \cf3 8px\cf2  \cf3 rgba(230,\cf2  \cf3 184,\cf2  \cf3 0,\cf2  \cf3 0.5);\
+\}\
+/*\cf6  \cf3 Mobile\cf6  \cf3 Navigation\cf6  \cf3 */\
+.mobile-nav\cf2  \cf3 \{\
+display:\cf2  \cf3 none;\
+position:\cf2  \cf3 absolute;\
+top:\cf2  \cf3 100%;\
+left:\cf2  \cf3 0;\
+width:\cf2  \cf3 100%;\
+background-color:\cf2  \cf3 white;\
+border-bottom:\cf2  \cf3 1px\cf2  \cf3 solid\cf2  \cf3 var(--header-border);\
+box-shadow:\cf2  \cf3 0\cf2  \cf3 4px\cf2  \cf3 15px\cf2  \cf3 rgba(0,\cf2  \cf3 0,\cf2  \cf3 0,\cf2  \cf3 0.1);\
+\}\
+.mobile-menu\cf2  \cf3 \{\
+list-style:\cf2  \cf3 none;\
+margin:\cf2  \cf3 0;\
+padding:\cf2  \cf3 20px\cf2  \cf3 0;\
+\}.mobile-nav-item\cf2  \cf3 \{\
+position:\cf2  \cf3 relative;\
+\}\
+.mobile-nav-link\cf2  \cf3 \{\
+display:\cf2  \cf3 block;\
+padding:\cf2  \cf3 15px\cf2  \cf3 20px;\
+color:\cf2  \cf3 var(--nav-text);\
+text-decoration:\cf2  \cf3 none;\
+font-family:\cf2  \cf3 var(--font-heading);\
+font-weight:\cf2  \cf3 500;\
+font-size:\cf2  \cf3 16px;\
+border-bottom:\cf2  \cf3 1px\cf2  \cf3 solid\cf2  \cf3 #f0f0f0;\
+transition:\cf2  \cf3 all\cf2  \cf3 0.3s\cf2  \cf3 ease;\
+\}\
+.mobile-nav-link:hover\cf2  \cf3 \{\
+color:\cf2  \cf3 var(--nav-hover);\
+background-color:\cf2  \cf3 #f0f9f7;\
+\}\
+.submenu-toggle\cf2  \cf3 \{\
+position:\cf2  \cf3 absolute;\
+right:\cf2  \cf3 20px;\
+top:\cf2  \cf3 50%;\
+transform:\cf2  \cf3 translateY(-50%);\
+background:\cf2  \cf3 none;\
+border:\cf2  \cf3 none;\
+font-size:\cf2  \cf3 20px;\
+color:\cf2  \cf3 var(--nav-text);\
+cursor:\cf2  \cf3 pointer;\
+width:\cf2  \cf3 30px;\
+height:\cf2  \cf3 30px;\
+border-radius:\cf2  \cf3 50%;\
+transition:\cf2  \cf3 all\cf2  \cf3 0.3s\cf2  \cf3 ease;\}\
+.submenu-toggle:hover\cf2  \cf3 \{\
+background-color:\cf2  \cf3 var(--nav-hover);\
+color:\cf2  \cf3 white;\
+\}\
+.mobile-submenu\cf2  \cf3 \{\
+display:\cf2  \cf3 none;\
+list-style:\cf2  \cf3 none;\
+margin:\cf2  \cf3 0;\
+padding:\cf2  \cf3 0;\
+background-color:\cf2  \cf3 #f8f9fa;\
+\}\
+.mobile-submenu\cf7  \cf3 .mobile-nav-link\cf2  \cf3 \{\
+padding-left:\cf2  \cf3 40px;\
+font-size:\cf2  \cf3 14px;\
+border-bottom:\cf2  \cf3 1px\cf2  \cf3 solid\cf2  \cf3 #e9ecef;\
+\}\
+/*\cf6  \cf3 Mobile\cf6  \cf3 Responsive\cf6  \cf3 */\
+@media\cf8  \cf3 (max-width:\cf8  \cf3 768px)\cf2  \cf3 \{\
+.desktop-nav\cf2  \cf3 \{\
+display:\cf2  \cf3 none;\
+\}\
+.mobile-menu-toggle\cf2  \cf3 \{\
+display:\cf2  \cf3 flex;\
+\}\
+.header-actions\cf7  \cf3 .search-trigger\cf2  \cf3 \{\
+display:\cf2  \cf3 none;\
+\}\
+.header-container\cf2  \cf3 \{padding:\cf2  \cf3 0\cf2  \cf3 15px;\
+\}\
+.logo-image\cf2  \cf3 \{\
+height:\cf2  \cf3 40px;\
+\}\
+\}\
+/*\cf6  \cf3 Mobile\cf6  \cf3 Menu\cf6  \cf3 Active\cf6  \cf3 States\cf6  \cf3 */\
+.mobile-nav.active\cf2  \cf3 \{\
+display:\cf2  \cf3 block;\
+\}\
+.mobile-submenu.active\cf2  \cf3 \{\
+display:\cf2  \cf3 block;\
+\}\
+.submenu-toggle[aria-expanded=\
+"true"]\cf2  \cf3 \{\
+transform:\cf2  \cf3 translateY(-50%)\cf2  \cf3 rotate(45deg);\
+\}\
+
+\f0\b\fs34 \cf2 Footer Structure\
+
+\fs26 Footer Layout\
+
+\f2\b0\fs18 \cf4 None\
+
+\fs22 \cf3 \uc0\u9484 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \
+\uc0\u9472 \u9472 \u9472 \u9488 \
+\uc0\u9474 \
+\uc0\u9474 \
+\uc0\u9474 \
+\uc0\u9474 \cf2  \cf3 BGP\cf2  \cf3 SHOP\cf2  \cf3 INFO\cf2  \cf3 |\cf2  \cf3 QUICK\cf2  \cf3 LINKS\cf2  \cf3 |\cf2  \cf3 CONNECT\cf2  \cf3 WITH\cf2  \cf3 US\
+\uc0\u9474 \cf2  \cf3 About\cf2  \cf3 BGP\cf2  \cf3 Shop\cf2  \cf3 |\cf2  \cf3 Shipping\cf2  \cf3 Info\cf2  \cf3 |\cf2  
+\f3 \cf3 \uc0\u55357 \u56551 
+\f2 \cf2  \cf3 Email\cf2  \cf3 Newsletter\
+\uc0\u9474 \cf2  \cf3 Email:\cf2  \cf3 ...\cf2  \cf3 |\cf2  \cf3 Returns\cf2  \cf3 |\cf2  
+\f3 \cf3 \uc0\u55357 \u56561 
+\f2 \cf2  \cf3 Social\cf2  \cf3 Media\uc0\u9474 \cf2  \cf3 Privacy\cf2  \cf3 Policy\cf2  \cf3 |\cf2  \cf3 Size\cf2  \cf3 Guide\cf2  \cf3 |\cf2  
+\f3 \cf3 \uc0\u55356 \u57119 
+\f2 \cf2  \cf3 Reviews\
+\uc0\u9474 \
+\uc0\u9474 \cf2  \cf3 |\cf2  \cf3 FAQ\cf2  \cf3 |\
+\uc0\u9474 \
+\uc0\u9500 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \
+\uc0\u9472 \u9472 \u9472 \u9508 \
+\uc0\u9474 \cf2  \cf3 \'a9\cf2  \cf3 2025\cf2  \cf3 BGP\cf2  \cf3 Shop\cf2  \cf3 |\cf2  \cf3 Privacy\cf2  \cf3 Policy\cf2  \cf3 |\cf2  \cf3 Terms\cf2  \cf3 of\cf2  \cf3 Service\cf2  \cf3 \uc0\u9474 \
+\uc0\u9492 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \
+\uc0\u9472 \u9472 \u9472 \u9496 \
+
+\f0\b\fs34 \cf2 Footer HTML Structure\
+
+\f1\b0\fs22 html\
+
+\f2\fs18 \cf4 HTML\
+
+\fs22 \cf3 <footer\cf5  \cf3 class=\
+<div\cf5  \cf3 class=\
+"site-footer">\
+"footer-container">\
+<!--\cf6  \cf3 Main\cf6  \cf3 Footer\cf6  \cf3 Content\cf6  \cf3 -->\
+<div\cf5  \cf3 class=\
+"footer-main">\
+<!--\cf6  \cf3 Company\cf6  \cf3 Info\cf6  \cf3 Column\cf6  \cf3 -->\
+<div\cf5  \cf3 class=\
+"footer-column">\
+<h3\cf5  \cf3 class=\
+"footer-title">BGP\cf2  \cf3 Shop</h3>\
+<p\cf5  \cf3 class=\
+"footer-description">\
+Where\cf2  \cf3 positivity\cf2  \cf3 meets\cf2  \cf3 everyday\cf2  \cf3 style.\cf2  \cf3 Discover\
+clothing\cf2  \cf3 and\cf2  \cf3 accessories\cf2  \cf3 that\cf2  \cf3 celebrate\cf2  \cf3 community,\cf2  \cf3 joy,\cf2  \cf3 and\cf2  \cf3 the\
+beauty\cf2  \cf3 of\cf2  \cf3 everyday\cf2  \cf3 moments.\
+</p>\
+<div\cf5  \cf3 class=\
+"footer-contact">\
+class=\
+<p\cf5  \cf3 class=\
+<span\cf5  \cf3 class=\
+<a\cf5  \cf3 href=\
+"contact-item">\
+"contact-label">Email:</span>\
+"mailto:shop@bgpnc.com"\
+"contact-link">shop@bgpnc.com</a>\
+</p>\
+</div>\
+</div><!--\cf6  \cf3 Quick\cf6  \cf3 Links\cf6  \cf3 Column\cf6  \cf3 -->\
+<div\cf5  \cf3 class=\
+"footer-column">\
+<h3\cf5  \cf3 class=\
+"footer-title">Quick\cf2  \cf3 Links</h3>\
+<ul\cf5  \cf3 class=\
+"footer-links">\
+<li><a\cf5  \cf3 href=\
+"/shipping"\cf5  \cf3 class=\
+Info</a></li>\
+<li><a\cf5  \cf3 href=\
+"/returns"\cf5  \cf3 class=\
+"footer-link">Shipping\
+"footer-link">Returns\cf2  \cf3 &\
+Exchanges</a></li>\
+<li><a\cf5  \cf3 href=\
+"/size-guide"\cf5  \cf3 class=\
+"footer-link">Size\
+Guide</a></li>\
+<li><a\cf5  \cf3 href=\
+<li><a\cf5  \cf3 href=\
+"/faq"\cf5  \cf3 class=\
+"/about"\cf5  \cf3 class=\
+"footer-link">FAQ</a></li>\
+"footer-link">About\
+Us</a></li>\
+class=\
+<li><a\cf5  \cf3 href=\
+"/contact"\
+"footer-link">Contact</a></li>\
+</ul>\
+</div>\
+<!--\cf6  \cf3 Connect\cf6  \cf3 Column\cf6  \cf3 -->\
+<div\cf5  \cf3 class=\
+"footer-column">\
+<h3\cf5  \cf3 class=\
+"footer-title">Connect\cf2  \cf3 With\cf2  \cf3 Us</h3>\
+placeholder=\
+class=\
+<!--\cf6  \cf3 Newsletter\cf6  \cf3 Signup\cf6  \cf3 -->\
+<div\cf5  \cf3 class=\
+"newsletter-signup">\
+<p\cf5  \cf3 class=\
+"newsletter-text">Join\cf2  \cf3 the\cf2  \cf3 Positivity\cf2  \cf3 Club</p>\
+<form\cf5  \cf3 class=\
+"newsletter-form">\
+<div\cf5  \cf3 class=\
+"newsletter-input-group">\
+<input\cf5  \cf3 type=\
+"email"\cf5  \cf3 class=\
+"newsletter-input"\
+"Enter\cf7  \cf3 your\cf7  \cf3 email"\cf5  \cf3 aria-label=\
+"Email\cf7  \cf3 address">\
+<button\cf5  \cf3 type=\
+"submit"\
+"newsletter-button">Subscribe</button>\
+</div>\
+</form>\
+</div>\
+<!--\cf6  \cf3 Social\cf6  \cf3 Media\cf6  \cf3 --><div\cf5  \cf3 class=\
+"social-media">\
+<p\cf5  \cf3 class=\
+<div\cf5  \cf3 class=\
+"social-title">Follow\cf2  \cf3 the\cf2  \cf3 Good\cf2  \cf3 Vibes</p>\
+"social-links">\
+<a\
+href=\
+"https://www.facebook.com/p/Believers-Gathering-Place-615660\
+28974961/"\cf5  \cf3 class=\
+"social-link"\cf5  \cf3 aria-label=\
+"Facebook">\
+<svg\cf5  \cf3 class=\
+<use\cf5  \cf3 href=\
+"social-icon"\cf5  \cf3 width=\
+"24"\cf5  \cf3 height=\
+"24">\
+"#icon-facebook"></use>\
+</svg>\
+</a>\
+<a\
+href=\
+class=\
+"https://www.instagram.com/believersgatheringplace/"\
+"social-link"\cf5  \cf3 aria-label=\
+"Instagram">\
+"social-icon"\cf5  \cf3 width=\
+"24"\cf5  \cf3 height=\
+<svg\cf5  \cf3 class=\
+<use\cf5  \cf3 href=\
+"24">\
+"#icon-instagram"></use>\
+</svg>\
+</a>\
+<a\cf5  \cf3 href=\
+class=\
+"https://www.tiktok.com/@bgpnc"\
+"social-link"\cf5  \cf3 aria-label=\
+"TikTok">\
+<svg\cf5  \cf3 class=\
+<use\cf5  \cf3 href=\
+"social-icon"\cf5  \cf3 width=\
+"24"\cf5  \cf3 height=\
+"24">\
+"#icon-tiktok"></use>\
+</svg>\
+</a>\
+<a\
+href=\
+class=\
+"https://www.youtube.com/channel/UC0KQ8zlAcSHihq53NCV1yUw"\
+"social-link"\cf5  \cf3 aria-label=\
+"YouTube">\
+<svg\cf5  \cf3 class=\
+<use\cf5  \cf3 href=\
+"social-icon"\cf5  \cf3 width=\
+"24"\cf5  \cf3 height=\
+"24">\
+"#icon-youtube"></use>\
+</svg>\
+</a>\
+</div>\
+</div>\
+</div>\
+</div>\
+<!--\cf6  \cf3 Footer\cf6  \cf3 Bottom\cf6  \cf3 --><div\cf5  \cf3 class=\
+"footer-bottom">\
+<div\cf5  \cf3 class=\
+"footer-copyright">\
+<p>&copy;\cf2  \cf3 2025\cf2  \cf3 BGP\cf2  \cf3 Shop.\cf2  \cf3 All\cf2  \cf3 rights\cf2  \cf3 reserved.</p>\
+</div>\
+<div\cf5  \cf3 class=\
+<a\cf5  \cf3 href=\
+<a\cf5  \cf3 href=\
+"footer-legal">\
+"/privacy"\cf5  \cf3 class=\
+"/terms"\cf5  \cf3 class=\
+"legal-link">Privacy\cf2  \cf3 Policy</a>\
+"legal-link">Terms\cf2  \cf3 of\cf2  \cf3 Service</a>\
+</div>\
+</div>\
+</div>\
+</footer>\
+
+\f0\b\fs34 \cf2 Footer CSS Styling\
+
+\f1\b0\fs22 css\
+
+\f2\fs18 \cf4 CSS\
+
+\fs22 \cf3 /*\cf6  \cf3 Footer\cf6  \cf3 Variables\cf6  \cf3 */\
+:root\cf2  \cf3 \{\
+--footer-bg:\cf2  \cf3 var(--deep-charcoal);\
+--footer-text:\cf2  \cf3 var(--soft-cream);\
+--footer-link:\cf2  \cf3 var(--soft-cream);\
+--footer-link-hover:\cf2  \cf3 var(--golden-yellow);\
+--footer-border:\cf2  \cf3 var(--golden-yellow);\
+--footer-title-color:\cf2  \cf3 var(--golden-yellow);\
+\}\
+/*\cf6  \cf3 Footer\cf6  \cf3 Base\cf6  \cf3 Styles\cf6  \cf3 */\
+.site-footer\cf2  \cf3 \{\
+background:\cf2  \cf3 linear-gradient(135deg,\cf2  \cf3 var(--deep-charcoal)\cf2  \cf3 0%,\
+#1a252f\cf2  \cf3 100%);\
+color:\cf2  \cf3 var(--footer-text);\
+padding:\cf2  \cf3 60px\cf2  \cf3 0\cf2  \cf3 20px;\
+border-top:\cf2  \cf3 4px\cf2  \cf3 solid\cf2  \cf3 var(--golden-yellow);\
+box-shadow:\cf2  \cf3 0\cf2  \cf3 -4px\cf2  \cf3 20px\cf2  \cf3 rgba(230,\cf2  \cf3 184,\cf2  \cf3 0,\cf2  \cf3 0.15);\
+\}.footer-container\cf2  \cf3 \{\
+max-width:\cf2  \cf3 1200px;\
+margin:\cf2  \cf3 0\cf2  \cf3 auto;\
+padding:\cf2  \cf3 0\cf2  \cf3 20px;\
+\}\
+/*\cf6  \cf3 Footer\cf6  \cf3 Main\cf6  \cf3 Content\cf6  \cf3 */\
+.footer-main\cf2  \cf3 \{\
+display:\cf2  \cf3 grid;\
+grid-template-columns:\cf2  \cf3 1fr\cf2  \cf3 1fr\cf2  \cf3 1fr;\
+gap:\cf2  \cf3 40px;\
+margin-bottom:\cf2  \cf3 40px;\
+\}\
+.footer-column\cf2  \cf3 \{\
+min-width:\cf2  \cf3 0;\
+\}\
+.footer-title\cf2  \cf3 \{\
+font-family:\cf2  \cf3 var(--font-heading);\
+font-size:\cf2  \cf3 18px;\
+font-weight:\cf2  \cf3 600;\
+color:\cf2  \cf3 var(--footer-title-color);\
+margin-bottom:\cf2  \cf3 20px;\
+text-shadow:\cf2  \cf3 0\cf2  \cf3 0\cf2  \cf3 15px\cf2  \cf3 rgba(230,\cf2  \cf3 184,\cf2  \cf3 0,\cf2  \cf3 0.4);\
+\}\
+.footer-description\cf2  \cf3 \{\
+font-family:\cf2  \cf3 var(--font-body);\
+font-size:\cf2  \cf3 14px;\
+line-height:\cf2  \cf3 1.6;\
+margin-bottom:\cf2  \cf3 20px;\
+color:\cf2  \cf3 var(--footer-text);\
+\}/*\cf6  \cf3 Contact\cf6  \cf3 Info\cf6  \cf3 */\
+.footer-contact\cf2  \cf3 \{\
+margin-top:\cf2  \cf3 15px;\
+\}\
+.contact-item\cf2  \cf3 \{\
+margin-bottom:\cf2  \cf3 10px;\
+font-size:\cf2  \cf3 14px;\
+\}\
+.contact-label\cf2  \cf3 \{\
+font-weight:\cf2  \cf3 600;\
+color:\cf2  \cf3 var(--footer-title-color);\
+\}\
+.contact-link\cf2  \cf3 \{\
+color:\cf2  \cf3 var(--primary-teal);\
+text-decoration:\cf2  \cf3 none;\
+transition:\cf2  \cf3 all\cf2  \cf3 0.3s\cf2  \cf3 ease;\
+\}\
+.contact-link:hover\cf2  \cf3 \{\
+color:\cf2  \cf3 var(--footer-link-hover);\
+text-shadow:\cf2  \cf3 0\cf2  \cf3 0\cf2  \cf3 12px\cf2  \cf3 rgba(230,\cf2  \cf3 184,\cf2  \cf3 0,\cf2  \cf3 0.6);\
+\}\
+/*\cf6  \cf3 Footer\cf6  \cf3 Links\cf6  \cf3 */\
+.footer-links\cf2  \cf3 \{\
+list-style:\cf2  \cf3 none;\
+margin:\cf2  \cf3 0;\
+padding:\cf2  \cf3 0;\
+\}\
+.footer-links\cf7  \cf3 li\cf2  \cf3 \{\
+margin-bottom:\cf2  \cf3 12px;\
+\}.footer-link\cf2  \cf3 \{\
+color:\cf2  \cf3 var(--footer-text);\
+text-decoration:\cf2  \cf3 none;\
+font-size:\cf2  \cf3 14px;\
+font-family:\cf2  \cf3 var(--font-body);\
+transition:\cf2  \cf3 color\cf2  \cf3 0.3s\cf2  \cf3 ease;\
+\}\
+.footer-link:hover\cf2  \cf3 \{\
+color:\cf2  \cf3 var(--footer-link-hover);\
+text-shadow:\cf2  \cf3 0\cf2  \cf3 0\cf2  \cf3 10px\cf2  \cf3 rgba(230,\cf2  \cf3 184,\cf2  \cf3 0,\cf2  \cf3 0.5);\
+\}\
+/*\cf6  \cf3 Newsletter\cf6  \cf3 Signup\cf6  \cf3 */\
+.newsletter-signup\cf2  \cf3 \{\
+margin-bottom:\cf2  \cf3 30px;\
+\}\
+.newsletter-text\cf2  \cf3 \{\
+font-size:\cf2  \cf3 16px;\
+font-weight:\cf2  \cf3 500;\
+margin-bottom:\cf2  \cf3 15px;\
+color:\cf2  \cf3 var(--footer-title-color);\
+text-shadow:\cf2  \cf3 0\cf2  \cf3 0\cf2  \cf3 8px\cf2  \cf3 rgba(230,\cf2  \cf3 184,\cf2  \cf3 0,\cf2  \cf3 0.3);\
+\}\
+.newsletter-input-group\cf2  \cf3 \{\
+display:\cf2  \cf3 flex;\
+border-radius:\cf2  \cf3 6px;\
+overflow:\cf2  \cf3 hidden;\
+border:\cf2  \cf3 2px\cf2  \cf3 solid\cf2  \cf3 var(--golden-yellow);\
+box-shadow:\cf2  \cf3 0\cf2  \cf3 4px\cf2  \cf3 15px\cf2  \cf3 rgba(230,\cf2  \cf3 184,\cf2  \cf3 0,\cf2  \cf3 0.2);\
+\}\
+.newsletter-input\cf2  \cf3 \{flex:\cf2  \cf3 1;\
+padding:\cf2  \cf3 12px\cf2  \cf3 15px;\
+border:\cf2  \cf3 none;\
+font-size:\cf2  \cf3 14px;\
+font-family:\cf2  \cf3 var(--font-body);\
+background-color:\cf2  \cf3 white;\
+color:\cf2  \cf3 var(--deep-charcoal);\
+\}\
+.newsletter-input::placeholder\cf2  \cf3 \{\
+color:\cf2  \cf3 #999;\
+\}\
+.newsletter-button\cf2  \cf3 \{\
+padding:\cf2  \cf3 12px\cf2  \cf3 20px;\
+background:\cf2  \cf3 linear-gradient(135deg,\cf2  \cf3 var(--golden-yellow),\
+var(--light-yellow));\
+color:\cf2  \cf3 var(--deep-charcoal);\
+border:\cf2  \cf3 none;\
+font-family:\cf2  \cf3 var(--font-heading);\
+font-weight:\cf2  \cf3 700;\
+font-size:\cf2  \cf3 14px;\
+cursor:\cf2  \cf3 pointer;\
+transition:\cf2  \cf3 all\cf2  \cf3 0.3s\cf2  \cf3 ease;\
+text-transform:\cf2  \cf3 uppercase;\
+letter-spacing:\cf2  \cf3 0.5px;\
+\}\
+.newsletter-button:hover\cf2  \cf3 \{\
+background:\cf2  \cf3 linear-gradient(135deg,\cf2  \cf3 var(--light-yellow),\
+var(--golden-yellow));\
+transform:\cf2  \cf3 translateY(-2px);\
+box-shadow:\cf2  \cf3 0\cf2  \cf3 6px\cf2  \cf3 20px\cf2  \cf3 rgba(230,\cf2  \cf3 184,\cf2  \cf3 0,\cf2  \cf3 0.4);\
+\}\
+/*\cf6  \cf3 Social\cf6  \cf3 Media\cf6  \cf3 */.social-media\cf2  \cf3 \{\
+margin-top:\cf2  \cf3 20px;\
+\}\
+.social-title\cf2  \cf3 \{\
+font-size:\cf2  \cf3 14px;\
+font-weight:\cf2  \cf3 500;\
+margin-bottom:\cf2  \cf3 15px;\
+color:\cf2  \cf3 var(--footer-title-color);\
+font-weight:\cf2  \cf3 600;\
+\}\
+.social-links\cf2  \cf3 \{\
+display:\cf2  \cf3 flex;\
+gap:\cf2  \cf3 15px;\
+\}\
+.social-link\cf2  \cf3 \{\
+color:\cf2  \cf3 var(--deep-charcoal);\
+padding:\cf2  \cf3 8px;\
+border-radius:\cf2  \cf3 50%;\
+transition:\cf2  \cf3 all\cf2  \cf3 0.3s\cf2  \cf3 ease;\
+background:\cf2  \cf3 linear-gradient(135deg,\cf2  \cf3 var(--golden-yellow),\
+var(--light-yellow));\
+border:\cf2  \cf3 2px\cf2  \cf3 solid\cf2  \cf3 var(--golden-yellow);\
+text-decoration:\cf2  \cf3 none;\
+width:\cf2  \cf3 40px;\
+height:\cf2  \cf3 40px;\
+display:\cf2  \cf3 flex;\
+align-items:\cf2  \cf3 center;\
+justify-content:\cf2  \cf3 center;\
+font-weight:\cf2  \cf3 bold;\
+\}\
+.social-link:hover\cf2  \cf3 \{\
+color:\cf2  \cf3 var(--deep-charcoal);background:\cf2  \cf3 linear-gradient(135deg,\cf2  \cf3 var(--light-yellow),\
+var(--golden-yellow));\
+transform:\cf2  \cf3 translateY(-4px)\cf2  \cf3 scale(1.1);\
+box-shadow:\cf2  \cf3 0\cf2  \cf3 8px\cf2  \cf3 25px\cf2  \cf3 rgba(230,\cf2  \cf3 184,\cf2  \cf3 0,\cf2  \cf3 0.4);\
+\}\
+.social-icon\cf2  \cf3 \{\
+width:\cf2  \cf3 20px;\
+height:\cf2  \cf3 20px;\
+fill:\cf2  \cf3 currentColor;\
+\}\
+/*\cf6  \cf3 Footer\cf6  \cf3 Bottom\cf6  \cf3 */\
+.footer-bottom\cf2  \cf3 \{\
+border-top:\cf2  \cf3 3px\cf2  \cf3 solid\cf2  \cf3 var(--golden-yellow);\
+padding-top:\cf2  \cf3 20px;\
+display:\cf2  \cf3 flex;\
+justify-content:\cf2  \cf3 space-between;\
+align-items:\cf2  \cf3 center;\
+flex-wrap:\cf2  \cf3 wrap;\
+background:\cf2  \cf3 linear-gradient(90deg,\cf2  \cf3 rgba(230,\cf2  \cf3 184,\cf2  \cf3 0,\cf2  \cf3 0.1),\
+rgba(240,\cf2  \cf3 196,\cf2  \cf3 32,\cf2  \cf3 0.1));\
+margin:\cf2  \cf3 0\cf2  \cf3 -20px;\
+padding-left:\cf2  \cf3 20px;\
+padding-right:\cf2  \cf3 20px;\
+border-radius:\cf2  \cf3 10px\cf2  \cf3 10px\cf2  \cf3 0\cf2  \cf3 0;\
+box-shadow:\cf2  \cf3 0\cf2  \cf3 -2px\cf2  \cf3 10px\cf2  \cf3 rgba(230,\cf2  \cf3 184,\cf2  \cf3 0,\cf2  \cf3 0.1);\
+gap:\cf2  \cf3 20px;\
+\}\
+.footer-copyright\cf2  \cf3 \{\
+font-size:\cf2  \cf3 14px;\
+color:\cf2  \cf3 var(--footer-text);\
+\}\
+.footer-legal\cf2  \cf3 \{display:\cf2  \cf3 flex;\
+gap:\cf2  \cf3 20px;\
+\}\
+.legal-link\cf2  \cf3 \{\
+color:\cf2  \cf3 var(--golden-yellow);\
+text-decoration:\cf2  \cf3 none;\
+font-size:\cf2  \cf3 14px;\
+font-weight:\cf2  \cf3 600;\
+transition:\cf2  \cf3 all\cf2  \cf3 0.3s\cf2  \cf3 ease;\
+\}\
+.legal-link:hover\cf2  \cf3 \{\
+color:\cf2  \cf3 var(--soft-coral);\
+text-shadow:\cf2  \cf3 0\cf2  \cf3 0\cf2  \cf3 10px\cf2  \cf3 rgba(255,\cf2  \cf3 107,\cf2  \cf3 107,\cf2  \cf3 0.4);\
+transform:\cf2  \cf3 translateY(-1px);\
+\}\
+/*\cf6  \cf3 Mobile\cf6  \cf3 Responsive\cf6  \cf3 */\
+@media\cf8  \cf3 (max-width:\cf8  \cf3 768px)\cf2  \cf3 \{\
+.footer-main\cf2  \cf3 \{\
+grid-template-columns:\cf2  \cf3 1fr;\
+gap:\cf2  \cf3 30px;\
+\}\
+.footer-bottom\cf2  \cf3 \{\
+flex-direction:\cf2  \cf3 column;\
+text-align:\cf2  \cf3 center;\
+\}\
+.newsletter-input-group\cf2  \cf3 \{\
+flex-direction:\cf2  \cf3 column;\
+\}\
+.newsletter-input\cf2  \cf3 \{\
+border-radius:\cf2  \cf3 6px\cf2  \cf3 6px\cf2  \cf3 0\cf2  \cf3 0;\}\
+\}\
+\}\
+.newsletter-button\cf2  \cf3 \{\
+border-radius:\cf2  \cf3 0\cf2  \cf3 0\cf2  \cf3 6px\cf2  \cf3 6px;\
+.social-links\cf2  \cf3 \{\
+justify-content:\cf2  \cf3 center;\
+\}\
+
+\f0\b\fs34 \cf2 JavaScript Functionality\
+
+\f1\b0\fs22 javascript\
+
+\f2\fs18 \cf4 JavaScript\
+
+\fs22 \cf3 //\cf6  \cf3 Header\cf6  \cf3 &\cf6  \cf3 Footer\cf6  \cf3 JavaScript\
+document.addEventListener('DOMContentLoaded'\
+,\cf2  \cf3 function()\cf2  \cf3 \{\
+//\cf6  \cf3 Mobile\cf6  \cf3 Menu\cf6  \cf3 Toggle\
+const\cf2  \cf3 mobileToggle\cf2  \cf3 =\
+document.querySelector('\
+.mobile-menu-toggle');\
+const\cf2  \cf3 mobileNav\cf2  \cf3 =\cf2  \cf3 document.querySelector('\
+.mobile-nav');\
+if\cf2  \cf3 (mobileToggle\cf2  \cf3 &&\cf2  \cf3 mobileNav)\cf2  \cf3 \{\
+mobileToggle.addEventListener('click'\
+,\cf2  \cf3 function()\cf2  \cf3 \{\
+const\cf2  \cf3 isOpen\cf2  \cf3 =\cf2  \cf3 mobileNav.classList.toggle('active');\
+mobileToggle.setAttribute('aria-expanded'\
+,\cf2  \cf3 isOpen);\
+\});\
+\}\
+//\cf6  \cf3 Submenu\cf6  \cf3 Toggles\
+const\cf2  \cf3 submenuToggles\cf2  \cf3 =\
+document.querySelectorAll('\
+.submenu-toggle');\
+submenuToggles.forEach(toggle\cf2  \cf3 =>\cf2  \cf3 \{\
+toggle.addEventListener('click'\
+,\cf2  \cf3 function()\cf2  \cf3 \{const\cf2  \cf3 submenu\cf2  \cf3 =\cf2  \cf3 this.nextElementSibling;\
+const\cf2  \cf3 isOpen\cf2  \cf3 =\cf2  \cf3 submenu.classList.toggle('active');\
+this.setAttribute('aria-expanded'\
+,\cf2  \cf3 isOpen);\
+\});\
+\});\
+//\cf6  \cf3 Newsletter\cf6  \cf3 Form\
+const\cf2  \cf3 newsletterForm\cf2  \cf3 =\
+document.querySelector('\
+.newsletter-form');\
+if\cf2  \cf3 (newsletterForm)\cf2  \cf3 \{\
+newsletterForm.addEventListener('submit'\
+e.preventDefault();\
+const\cf2  \cf3 email\cf2  \cf3 =\
+this.querySelector('\
+.newsletter-input').value;\
+,\cf2  \cf3 function(e)\cf2  \cf3 \{\
+if\cf2  \cf3 (email)\cf2  \cf3 \{\
+//\cf6  \cf3 Add\cf6  \cf3 your\cf6  \cf3 newsletter\cf6  \cf3 signup\cf6  \cf3 logic\cf6  \cf3 here\
+console.log('Newsletter\cf7  \cf3 signup:'\
+,\cf2  \cf3 email);\
+//\cf6  \cf3 Show\cf6  \cf3 success\cf6  \cf3 message\
+const\cf2  \cf3 button\cf2  \cf3 =\cf2  \cf3 this.querySelector('\
+const\cf2  \cf3 originalText\cf2  \cf3 =\cf2  \cf3 button.textContent;\
+button.textContent\cf2  \cf3 =\
+'Subscribed!';\
+button.style.backgroundColor\cf2  \cf3 =\
+'#4CAF50';\
+.newsletter-button');\
+setTimeout(()\cf2  \cf3 =>\cf2  \cf3 \{\
+button.textContent\cf2  \cf3 =\cf2  \cf3 originalText;\
+button.style.backgroundColor\cf2  \cf3 =\
+'';\
+\},\cf2  \cf3 3000);\
+//\cf6  \cf3 Clear\cf6  \cf3 input\
+this.querySelector('\
+.newsletter-input').value\cf2  \cf3 =\
+'';\
+\}\
+\});\
+\}//\cf6  \cf3 Cart\cf6  \cf3 Count\cf6  \cf3 Update\cf6  \cf3 (placeholder)\
+function\cf2  \cf3 updateCartCount(count)\cf2  \cf3 \{\
+const\cf2  \cf3 cartCountElement\cf2  \cf3 =\
+document.querySelector('\
+.cart-count');\
+if\cf2  \cf3 (cartCountElement)\cf2  \cf3 \{\
+cartCountElement.textContent\cf2  \cf3 =\cf2  \cf3 count;\
+cartCountElement.style.display\cf2  \cf3 =\cf2  \cf3 count\cf2  \cf3 >\cf2  \cf3 0\cf2  \cf3 ?\cf2  \cf3 'block'\cf2  \cf3 :\
+'none';\
+\}\
+\}\
+//\cf6  \cf3 Close\cf6  \cf3 mobile\cf6  \cf3 menu\cf6  \cf3 when\cf6  \cf3 clicking\cf6  \cf3 outside\
+document.addEventListener('click'\
+,\cf2  \cf3 function(e)\cf2  \cf3 \{\
+if\cf2  \cf3 (!e.target.closest('\
+.site-header')\cf2  \cf3 &&\
+mobileNav.classList.contains('active'))\cf2  \cf3 \{\
+mobileNav.classList.remove('active');\
+mobileToggle.setAttribute('aria-expanded'\
+,\
+'false');\
+\}\
+\});\
+\});\
+
+\f0\b\fs34 \cf2 Page Layout Strategy\
+
+\fs26 Homepage Implementation\
+
+\f1\b0\fs22 \uc0\u9679 \
+\uc0\u9679 \
+\uc0\u9679 \
+\uc0\u9679 \
+
+\f0\b Hero Section
+\f1\b0 : Colorful image background with text overlays\
+
+\f0\b Content Sections
+\f1\b0 : Soft cream (
+\f2 \cf3 #F8F6F0
+\f1 \cf2 ) backgrounds for warmth\
+
+\f0\b Product Showcases
+\f1\b0 : White backgrounds for clean product display\
+
+\f0\b Call-to-Action Areas
+\f1\b0 : Golden yellow highlights\
+
+\f0\b\fs26 Shop Page Implementation\
+
+\f1\b0\fs22 \uc0\u9679 \
+\uc0\u9679 \
+\uc0\u9679 \
+\uc0\u9679 \
+
+\f0\b Main Background
+\f1\b0 : Pure white (
+\f2 \cf3 #FFFFFF
+\f1 \cf2 ) for clean product focus\
+
+\f0\b Product Cards
+\f1\b0 : White backgrounds with subtle shadows\
+
+\f0\b Filter Sidebar
+\f1\b0 : Light gray/cream accent backgrounds\
+
+\f0\b Category Headers
+\f1\b0 : Golden yellow accents
+\f0\b\fs26 Other Pages (About, Contact, Blog)\
+
+\f1\b0\fs22 \uc0\u9679 \
+\uc0\u9679 \
+\uc0\u9679 \
+
+\f0\b Primary Background
+\f1\b0 : White (
+\f2 \cf3 #FFFFFF
+\f1 \cf2 ) for readability\
+
+\f0\b Section Dividers
+\f1\b0 : Soft cream (
+\f2 \cf3 #F8F6F0
+\f1 \cf2 ) accent sections\
+
+\f0\b Highlight Areas
+\f1\b0 : Teal (
+\f2 \cf3 #4A9B8E
+\f1 \cf2 ) accent blocks\
+
+\f0\b\fs34 Social Media Integration\
+
+\fs26 Updated Links\
+
+\f1\b0\fs22 \uc0\u9679 \
+\uc0\u9679 \
+\uc0\u9679 \
+\uc0\u9679 \
+
+\f0\b Facebook
+\f1\b0 : \cf9 https://www.facebook.com/p/Believers-Gathering-Place-61566028974961/\
+
+\f0\b \cf2 Instagram
+\f1\b0 : \cf9 https://www.instagram.com/believersgatheringplace/\
+
+\f0\b \cf2 TikTok
+\f1\b0 : \cf9 https://www.tiktok.com/@bgpnc\
+
+\f0\b \cf2 YouTube
+\f1\b0 : \cf9 https://www.youtube.com/channel/UC0KQ8zlAcSHihq53NCV1yUw\
+
+\f0\b\fs26 \cf2 Contact Information\
+
+\f1\b0\fs22 \uc0\u9679 \
+\uc0\u9679 \
+
+\f0\b Primary Email
+\f1\b0 : shop@bgpnc.com\
+
+\f0\b Business Type
+\f1\b0 : Online-only retail (no physical location/hours)\
+
+\f0\b\fs34 Implementation Priorities\
+
+\fs26 Phase 1: Core Header/Footer (Day 1)\
+
+\f1\b0\fs22 \uc0\u9679 \
+\uc0\u9679 \
+\uc0\u9679 \
+\uc0\u9679 \
+\uc0\u9679 \
+\uc0\u9679 \
+\uc0\u9679 \
+Dark header with golden yellow accents\
+Logo implementation with teal glow effect\
+Navigation with hover effects and yellow underlines\
+Golden action buttons (search, cart, account)\
+Dark footer with yellow section titles\
+Newsletter signup with yellow styling\
+Social media links with golden buttons\
+
+\f0\b\fs26 Phase 2: Page Backgrounds (Day 1)\
+
+\f1\b0\fs22 \uc0\u9679 \
+\uc0\u9679 \
+\uc0\u9679 \
+\uc0\u9679 \
+White background implementation for shop pages\
+CSS variables for easy background switching\
+Responsive design testing\
+Mobile navigation functionality\
+
+\f0\b\fs26 Phase 3: Integration & Testing (Day 1)
+\f1\b0\fs22 \uc0\u9679 \
+\uc0\u9679 \
+\uc0\u9679 \
+\uc0\u9679 \
+\uc0\u9679 \
+WordPress/Elementor compatibility\
+Cross-browser testing\
+Mobile responsiveness verification\
+Performance optimization\
+Accessibility compliance check\
+
+\f0\b\fs34 WordPress/Elementor Integration Notes\
+
+\fs26 Header Implementation\
+
+\f1\b0\fs22 \uc0\u9679 \
+\uc0\u9679 \
+\uc0\u9679 \
+\uc0\u9679 \
+\uc0\u9679 \
+
+\f0\b Theme Builder
+\f1\b0 : Use Elementor's header template\
+
+\f0\b Logo
+\f1\b0 : Text-based "BGP" with custom CSS styling\
+
+\f0\b Navigation
+\f1\b0 : WordPress custom menu integration\
+
+\f0\b Mobile Menu
+\f1\b0 : JavaScript-powered hamburger menu\
+
+\f0\b Cart Integration
+\f1\b0 : WooCommerce cart widget with custom styling\
+
+\f0\b\fs26 Footer Implementation\
+
+\f1\b0\fs22 \uc0\u9679 \
+\uc0\u9679 \
+\uc0\u9679 \
+\uc0\u9679 \
+
+\f0\b Template
+\f1\b0 : Elementor footer template\
+
+\f0\b Newsletter
+\f1\b0 : Integration with email marketing service\
+
+\f0\b Social Links
+\f1\b0 : Direct links to social media profiles\
+
+\f0\b Legal Pages
+\f1\b0 : WordPress pages for privacy/terms\
+
+\f0\b\fs26 Performance Considerations\
+
+\f1\b0\fs22 \uc0\u9679 \
+\uc0\u9679 \
+\uc0\u9679 \
+\uc0\u9679 \
+
+\f0\b Font Loading
+\f1\b0 : Google Fonts with font-display: swap\
+
+\f0\b Image Optimization
+\f1\b0 : WebP format with fallbacks\
+
+\f0\b CSS Minification
+\f1\b0 : Combine and compress styles\
+
+\f0\b JavaScript Optimization
+\f1\b0 : Minimal, efficient scripts only\
+
+\f0\b\fs34 Maintenance & Updates\
+
+\fs26 Regular Tasks\
+
+\f1\b0\fs22 \uc0\u9679 \
+\uc0\u9679 \
+\uc0\u9679 \
+\uc0\u9679 \
+\uc0\u9679 \
+Social media link verification (monthly)\
+Contact email functionality testing (monthly)\
+Mobile responsiveness checks (quarterly)\
+Performance optimization reviews (quarterly)\
+Accessibility compliance audits (annually)\
+
+\f0\b\fs26 Future Enhancements
+\f1\b0\fs22 \uc0\u9679 \
+\uc0\u9679 \
+\uc0\u9679 \
+\uc0\u9679 \
+\uc0\u9679 \
+Animated logo hover effects\
+Advanced mobile menu with submenu animations\
+Newsletter signup success animations\
+Social media feed integration\
+Search functionality enhancement}

@@ -1,3 +1,6 @@
+---
+import Header from '../components/Header.astro';
+---
 <!doctype html>
 <html lang="en">
 	<head>
@@ -5,14 +8,44 @@
 		<meta name="viewport" content="width=device-width" />
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="generator" content={Astro.generator} />
-		<title>Astro Basics</title>
+		<title>BGP Shop</title>
 	</head>
 	<body>
+		<Header />
 		<slot />
 	</body>
 </html>
 
 <style>
+  /* CSS Variables */
+  :root {
+    --primary-teal: #4A9B8E;
+    --light-teal: #7BC4B8;
+    --dark-teal: #2E6B61;
+    --golden-yellow: #F4D03F;
+    --light-yellow: #F7DC6F;
+    --soft-cream: #F8F6F0;
+    --deep-charcoal: #2C3E50;
+    --sage-green: #87A96B;
+    --soft-coral: #FF6B6B;
+    --pure-white: #FFFFFF;
+
+    /* Typography */
+    --font-heading: 'Inter', 'Helvetica Neue', Arial, sans-serif;
+    --font-body: 'Source Sans Pro', 'Segoe UI', Tahoma, sans-serif;
+  }
+
+  /* Reset and Base Styles */
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body {
+    font-family: var(--font-body);
+    line-height: 1.6;
+    color: var(--deep-charcoal);
+  }
 	html,
 	body {
 		margin: 0;

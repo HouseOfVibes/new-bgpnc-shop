@@ -1,0 +1,79 @@
+<style>
+  /* ------------------------------------
+     Two-Column Ad Section – Image Left, Text Right
+     Updated: White Background & New Image
+     ------------------------------------ */
+  .ad-section {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 2rem;
+    padding: 80px 5%;
+    background-color: #FFFFFF; /* white background */
+  }
+  .ad-image {
+    flex: 1 1 400px;
+  }
+  .ad-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 8px;
+  }
+  .ad-content {
+    flex: 1 1 400px;
+  }
+  .ad-content .section-title {
+    font-family: 'Inter', 'Helvetica Neue', Arial, sans-serif;
+    font-size: 42px;
+    font-weight: 600;
+    line-height: 1.2;
+    color: #2C3E50;   /* deep charcoal */
+    margin-bottom: 1rem;
+    text-align: center;
+  }
+  .ad-content .section-subheadline {
+    font-family: 'Source Sans Pro', 'Segoe UI', Tahoma, sans-serif;
+    font-size: 18px;
+    line-height: 1.6;
+    color: #2C3E50;
+    text-align: center;
+  }
+  /* Responsive breakpoints */
+  @media (max-width: 768px) {
+    .ad-section {
+      flex-direction: column;
+      padding: 60px 4%;
+    }
+    .ad-content .section-title {
+      font-size: 32px;
+    }
+  }
+  @media (max-width: 480px) {
+    .ad-content .section-title {
+      font-size: 24px;
+    }
+    .ad-content .section-subheadline {
+      font-size: 16px;
+    }
+  }
+</style>
+
+<section class="ad-section">
+  <div class="ad-image">
+    <img
+      src="https://shop.bgpnc.com/wp-content/uploads/2025/07/PRAYING_Woman_Group_BlackWomen_Outdoor_LightStyle.png.png"
+      alt="Group of Black women praying outdoors in light style"
+    >
+  </div>
+  <div class="ad-content">
+    <h2 class="section-title">Welcome to the BGP Store</h2>
+    <p class="section-subheadline">
+      WHERE FAITH MEETS EVERYDAY ESSENTIALS! Welcome to the BGP Store – your
+      ultimate source for faith-based products and daily necessities. Our online store offers a
+      curated collection of inspiring merchandise designed to uplift your spirit, nurture your faith,
+      and promote kindness and goodwill. Explore a deeper purpose, shop now and discover a harmonious
+      fusion of spirituality, motivation, and functionality at your fingertips.
+    </p>
+  </div>
+</section>
