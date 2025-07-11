@@ -1,0 +1,470 @@
+---
+// Header.astro - BGP Shop Header Component
+---
+
+<header class="site-header">
+  <div class="header-container">
+    <!-- Logo Section -->
+    <div class="header-logo">
+      <a href="/" class="logo-link">
+        <img src="https://shop.bgpnc.com/wp-content/uploads/2025/07/BGP-Logo-99-1.png" alt="BGP Shop" class="logo-image">
+      </a>
+    </div>
+
+    <!-- Desktop Navigation -->
+    <nav class="header-nav desktop-nav">
+      <ul class="nav-menu">
+        <li class="nav-item">
+          <a href="/" class="nav-link">Home</a>
+        </li>
+        <li class="nav-item has-dropdown">
+          <a href="/shop" class="nav-link">Shop</a>
+          <ul class="dropdown-menu">
+            <li><a href="/shop?category=apparel" class="dropdown-link">Positive Vibes Apparel</a></li>
+            <li><a href="/shop?category=accessories" class="dropdown-link">Everyday Inspiration</a></li>
+            <li><a href="/shop?category=lifestyle" class="dropdown-link">Good Energy Gear</a></li>
+            <li><a href="/shop" class="dropdown-link">View All</a></li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a href="/blog" class="nav-link">Blog</a>
+        </li>
+        <li class="nav-item">
+          <a href="/gallery" class="nav-link">Gallery</a>
+        </li>
+        <li class="nav-item">
+          <a href="/about" class="nav-link">About</a>
+        </li>
+        <li class="nav-item">
+          <a href="/contact" class="nav-link">Contact</a>
+        </li>
+      </ul>
+    </nav>
+
+    <!-- Header Actions -->
+    <div class="header-actions">
+      <a href="/search" class="action-link search-link" aria-label="Search">
+        <svg class="icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <circle cx="11" cy="11" r="8"></circle>
+          <path d="21 21l-4.35-4.35"></path>
+        </svg>
+      </a>
+      
+      <a href="/cart" class="action-link cart-link" aria-label="Shopping Cart">
+        <svg class="icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M9 22a1 1 0 1 0 0-2 1 1 0 0 0 0 2z"></path>
+          <path d="M20 22a1 1 0 1 0 0-2 1 1 0 0 0 0 2z"></path>
+          <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+        </svg>
+        <span class="cart-count">0</span>
+      </a>
+
+      <a href="/account" class="action-link account-link" aria-label="Account">
+        <svg class="icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+          <circle cx="12" cy="7" r="4"></circle>
+        </svg>
+      </a>
+
+      <!-- Mobile Menu Toggle -->
+      <button class="mobile-menu-toggle" aria-label="Toggle Menu" aria-expanded="false">
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+      </button>
+    </div>
+
+    <!-- Mobile Navigation -->
+    <nav class="header-nav mobile-nav">
+      <ul class="mobile-menu">
+        <li class="mobile-nav-item">
+          <a href="/" class="mobile-nav-link">Home</a>
+        </li>
+        <li class="mobile-nav-item has-submenu">
+          <a href="/shop" class="mobile-nav-link">Shop</a>
+          <button class="submenu-toggle" aria-expanded="false">+</button>
+          <ul class="mobile-submenu">
+            <li><a href="/shop?category=apparel" class="mobile-nav-link">Positive Vibes Apparel</a></li>
+            <li><a href="/shop?category=accessories" class="mobile-nav-link">Everyday Inspiration</a></li>
+            <li><a href="/shop?category=lifestyle" class="mobile-nav-link">Good Energy Gear</a></li>
+            <li><a href="/shop" class="mobile-nav-link">View All</a></li>
+          </ul>
+        </li>
+        <li class="mobile-nav-item">
+          <a href="/blog" class="mobile-nav-link">Blog</a>
+        </li>
+        <li class="mobile-nav-item">
+          <a href="/gallery" class="mobile-nav-link">Gallery</a>
+        </li>
+        <li class="mobile-nav-item">
+          <a href="/about" class="mobile-nav-link">About</a>
+        </li>
+        <li class="mobile-nav-item">
+          <a href="/contact" class="mobile-nav-link">Contact</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<style>
+/* CSS Variables */
+:root {
+  --header-height: 80px;
+  --deep-charcoal: #2C3E50;
+  --golden-yellow: #E6B800;
+  --primary-teal: #4A9B8E;
+  --soft-cream: #F8F6F0;
+}
+
+/* Header Base Styles */
+.site-header {
+  background-color: var(--deep-charcoal);
+  border-bottom: 3px solid var(--golden-yellow);
+  position: relative;
+  z-index: 100;
+  width: 100%;
+}
+
+.header-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: var(--header-height);
+}
+
+/* Logo Styles */
+.header-logo {
+  flex-shrink: 0;
+}
+
+.logo-link {
+  display: inline-block;
+  line-height: 1;
+}
+
+.logo-image {
+  height: 50px;
+  width: auto;
+  filter: drop-shadow(0 0 10px rgba(74, 155, 142, 0.3));
+  transition: all 0.3s ease;
+}
+
+.logo-link:hover .logo-image {
+  filter: drop-shadow(0 0 15px rgba(74, 155, 142, 0.5));
+  transform: scale(1.05);
+}
+
+/* Desktop Navigation */
+.desktop-nav {
+  display: flex;
+  flex-grow: 1;
+  justify-content: center;
+  margin: 0 40px;
+}
+
+.nav-menu {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  gap: 40px;
+  align-items: center;
+}
+
+.nav-item {
+  position: relative;
+}
+
+.nav-link {
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  color: var(--soft-cream);
+  text-decoration: none;
+  padding: 10px 0;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.nav-link:hover,
+.nav-item.active .nav-link {
+  color: var(--golden-yellow);
+}
+
+.nav-link::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 3px;
+  background: var(--golden-yellow);
+  transition: width 0.3s ease;
+  border-radius: 2px;
+}
+
+.nav-link:hover::after,
+.nav-item.active .nav-link::after {
+  width: 100%;
+}
+
+/* Dropdown Menu */
+.has-dropdown {
+  position: relative;
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: var(--golden-yellow);
+  border: 2px solid var(--golden-yellow);
+  border-radius: 8px;
+  list-style: none;
+  margin: 0;
+  padding: 10px 0;
+  min-width: 220px;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-10px);
+  transition: all 0.3s ease;
+  z-index: 1000;
+}
+
+.has-dropdown:hover .dropdown-menu {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+.dropdown-link {
+  display: block;
+  padding: 10px 20px;
+  color: var(--deep-charcoal);
+  text-decoration: none;
+  font-family: 'Inter', sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+}
+
+.dropdown-link:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+  color: var(--deep-charcoal);
+}
+
+/* Header Actions */
+.header-actions {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.action-link {
+  position: relative;
+  color: var(--deep-charcoal);
+  text-decoration: none;
+  padding: 10px;
+  border-radius: 50%;
+  transition: all 0.3s ease;
+  background: var(--golden-yellow);
+  border: 2px solid var(--golden-yellow);
+}
+
+.action-link:hover {
+  color: var(--deep-charcoal);
+  background: var(--soft-cream);
+  transform: translateY(-3px);
+}
+
+.icon {
+  width: 20px;
+  height: 20px;
+  stroke: currentColor;
+}
+
+/* Cart Count Badge */
+.cart-count {
+  position: absolute;
+  top: -2px;
+  right: -2px;
+  background: var(--primary-teal);
+  color: white;
+  font-size: 12px;
+  font-weight: 700;
+  padding: 3px 7px;
+  border-radius: 12px;
+  min-width: 20px;
+  text-align: center;
+}
+
+/* Mobile Menu Toggle */
+.mobile-menu-toggle {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+}
+
+.hamburger-line {
+  width: 25px;
+  height: 3px;
+  background-color: var(--soft-cream);
+  margin: 3px 0;
+  transition: all 0.3s ease;
+  border-radius: 2px;
+}
+
+.mobile-menu-toggle:hover .hamburger-line {
+  background-color: var(--golden-yellow);
+}
+
+/* Mobile Navigation */
+.mobile-nav {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  background-color: white;
+  border-bottom: 1px solid #e0e0e0;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.mobile-menu {
+  list-style: none;
+  margin: 0;
+  padding: 20px 0;
+}
+
+.mobile-nav-item {
+  position: relative;
+}
+
+.mobile-nav-link {
+  display: block;
+  padding: 15px 20px;
+  color: var(--deep-charcoal);
+  text-decoration: none;
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  border-bottom: 1px solid #f0f0f0;
+  transition: all 0.3s ease;
+}
+
+.mobile-nav-link:hover {
+  color: var(--primary-teal);
+  background-color: #f0f9f7;
+}
+
+.submenu-toggle {
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  font-size: 20px;
+  color: var(--deep-charcoal);
+  cursor: pointer;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  transition: all 0.3s ease;
+}
+
+.submenu-toggle:hover {
+  background-color: var(--primary-teal);
+  color: white;
+}
+
+.mobile-submenu {
+  display: none;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  background-color: #f8f9fa;
+}
+
+.mobile-submenu .mobile-nav-link {
+  padding-left: 40px;
+  font-size: 14px;
+  border-bottom: 1px solid #e9ecef;
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+  .desktop-nav {
+    display: none;
+  }
+  
+  .mobile-menu-toggle {
+    display: flex;
+  }
+  
+  .header-actions .search-link {
+    display: none;
+  }
+  
+  .header-container {
+    padding: 0 15px;
+  }
+  
+  .logo-image {
+    height: 40px;
+  }
+}
+
+/* Mobile Menu Active States */
+.mobile-nav.active {
+  display: block;
+}
+
+.mobile-submenu.active {
+  display: block;
+}
+
+.submenu-toggle[aria-expanded="true"] {
+  transform: translateY(-50%) rotate(45deg);
+}
+</style>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  const mobileToggle = document.querySelector('.mobile-menu-toggle');
+  const mobileNav = document.querySelector('.mobile-nav');
+  
+  if (mobileToggle && mobileNav) {
+    mobileToggle.addEventListener('click', function() {
+      const isOpen = mobileNav.classList.toggle('active');
+      mobileToggle.setAttribute('aria-expanded', isOpen);
+    });
+  }
+
+  const submenuToggles = document.querySelectorAll('.submenu-toggle');
+  submenuToggles.forEach(toggle => {
+    toggle.addEventListener('click', function() {
+      const submenu = this.nextElementSibling;
+      const isOpen = submenu.classList.toggle('active');
+      this.setAttribute('aria-expanded', isOpen);
+    });
+  });
+
+  document.addEventListener('click', function(e) {
+    if (!e.target.closest('.site-header') && mobileNav.classList.contains('active')) {
+      mobileNav.classList.remove('active');
+      mobileToggle.setAttribute('aria-expanded', 'false');
+    }
+  });
+});
+</script>
