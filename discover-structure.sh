@@ -1,0 +1,23 @@
+#!/bin/bash
+# Repository Structure Discovery Script
+
+echo "BGP Shop Repository Structure"
+echo "============================"
+echo ""
+echo "This script helps identify existing files in the repository."
+echo ""
+echo "Expected Astro 5.11 Project Structure:"
+echo "- package.json (project dependencies)"
+echo "- astro.config.mjs (Astro configuration)"
+echo "- src/ (source code directory)"
+echo "  - pages/ (Astro pages)"
+echo "  - components/ (React/Astro components)"
+echo "  - layouts/ (page layouts)"
+echo "- public/ (static assets)"
+echo ""
+echo "To use this script:"
+echo "1. Clone the repository locally"
+echo "2. Run: find . -name '*.json' -o -name '*.mjs' -o -name '*.astro' -o -name '*.jsx' -o -name '*.ts'"
+echo "3. Run: tree -I 'node_modules|.git' (if tree is installed)"
+echo ""
+echo "Created for development planning purposes"
