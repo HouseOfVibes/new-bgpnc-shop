@@ -1,0 +1,248 @@
+---
+// src/components/EnhancedWelcome.astro
+// Enhanced Hero Section for BGP Shop
+---
+
+<section class="hero-section">
+  <div class="hero-image-container">
+    <img 
+      src="https://shop.bgpnc.com/wp-content/uploads/2025/07/BGP_Kids_MuralBackdrop_Hoodies_GroupOf4.png.png" 
+      alt="Happy children wearing BGP apparel celebrating community and positivity"
+      class="hero-image"
+    />
+    <div class="hero-overlay"></div>
+  </div>
+  
+  <div class="hero-content">
+    <h1 class="hero-headline">Where Positivity Meets Everyday Style</h1>
+    <p class="hero-subheadline">
+      Discover clothing and accessories designed to uplift your spirit and brighten your day. 
+      From motivational tees to inspiring accessories, find pieces that reflect your positive energy.
+    </p>
+    
+    <div class="hero-cta-group">
+      <a href="/shop" class="btn-primary">Shop Good Vibes</a>
+    </div>
+    
+    <div class="hero-trust-signals">
+      <span>Positivity-Inspired Designs</span>
+      <span>For Everyone, Everywhere</span>
+      <span>Spread Good Vibes</span>
+    </div>
+  </div>
+</section>
+
+<style>
+  /* Hero Section Variables */
+  :root {
+    --primary-teal: #4A9B8E;
+    --light-teal: #7BC4B8;
+    --golden-yellow: #F4D03F;
+    --light-yellow: #F7DC6F;
+    --deep-charcoal: #2C3E50;
+    --soft-cream: #F8F6F0;
+    --soft-coral: #FF6B6B;
+  }
+
+  /* Hero Section Base Styles */
+  .hero-section {
+    position: relative;
+    height: 100vh;
+    min-height: 600px;
+    max-height: 800px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 0 5%;
+    overflow: hidden;
+  }
+
+  .hero-image-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+  }
+
+  .hero-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+  }
+
+  .hero-overlay {
+    display: none; /* No overlay - clean image display */
+  }
+
+  /* Hero Content Styles */
+  .hero-content {
+    max-width: 600px;
+    z-index: 10;
+    position: relative;
+  }
+
+  .hero-headline {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    font-weight: 700;
+    font-size: 3rem; /* 48px */
+    color: white;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    line-height: 1.2;
+    margin-bottom: 1rem;
+    letter-spacing: -0.02em;
+  }
+
+  .hero-subheadline {
+    font-family: 'Source Sans Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    font-weight: 400;
+    font-size: 1.125rem; /* 18px */
+    color: var(--soft-cream);
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+    line-height: 1.5;
+    margin-bottom: 2rem;
+    max-width: 500px;
+  }
+
+  /* Call-to-Action Button */
+  .hero-cta-group {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 2rem;
+    flex-wrap: wrap;
+  }
+
+  .btn-primary {
+    background: linear-gradient(135deg, var(--golden-yellow), var(--light-yellow));
+    color: var(--deep-charcoal);
+    padding: 0.75rem 1.5rem;
+    border-radius: 6px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    font-size: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 0.025em;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    border: 2px solid var(--golden-yellow);
+    cursor: pointer;
+    box-shadow: 0 4px 15px rgba(244, 208, 63, 0.3);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 180px;
+  }
+
+  .btn-primary:hover {
+    background: linear-gradient(135deg, var(--light-yellow), var(--golden-yellow));
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(244, 208, 63, 0.4);
+    color: var(--deep-charcoal);
+  }
+
+  /* Trust Signals */
+  .hero-trust-signals {
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 0.875rem; /* 14px */
+    color: var(--soft-cream);
+    font-weight: 500;
+  }
+
+  .hero-trust-signals span {
+    display: flex;
+    align-items: center;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+  }
+
+  /* Mobile Responsive */
+  @media (max-width: 768px) {
+    .hero-section {
+      height: 70vh;
+      min-height: 500px;
+      text-align: center;
+      justify-content: center;
+      padding: 0 1rem;
+    }
+
+    .hero-content {
+      max-width: 90%;
+    }
+
+    .hero-headline {
+      font-size: 2rem; /* 32px */
+      margin-bottom: 1rem;
+    }
+
+    .hero-subheadline {
+      font-size: 1rem; /* 16px */
+      margin-bottom: 1.5rem;
+    }
+
+    .hero-cta-group {
+      justify-content: center;
+    }
+
+    .btn-primary {
+      width: auto;
+      max-width: 280px;
+      text-align: center;
+    }
+
+    .hero-trust-signals {
+      flex-direction: column;
+      gap: 0.5rem;
+      text-align: center;
+      font-size: 0.8rem;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .hero-headline {
+      font-size: 1.75rem; /* 28px */
+    }
+
+    .hero-subheadline {
+      font-size: 0.9rem; /* 14px */
+    }
+
+    .hero-section {
+      min-height: 450px;
+    }
+  }
+
+  /* Enhanced Visual Effects */
+  @media (prefers-reduced-motion: no-preference) {
+    .hero-content {
+      animation: fadeInUp 0.8s ease-out;
+    }
+
+    .btn-primary {
+      transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+  }
+
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  /* High contrast mode support */
+  @media (prefers-contrast: high) {
+    .hero-headline,
+    .hero-subheadline,
+    .hero-trust-signals {
+      text-shadow: 0 2px 8px rgba(0, 0, 0, 0.8);
+    }
+  }
+</style>
